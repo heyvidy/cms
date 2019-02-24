@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="container">
+
+		<form action="/create/" method="post">
+			{% csrf_token %}
+			<label>Title</label><br>
+			<input type="text" name="title">
+			<br><br>
+			<label>Body</label><br>
+			<textarea name="body" rows="8" cols="80"></textarea><br>
+			<input type="submit" value="Create">
+		</form>
+	</div>
+	</body>
+</html>

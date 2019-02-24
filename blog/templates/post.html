@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>{{post.title}}</title>
+	</head>
+	<body>
+		<a href="/">Back to Home</a>
+		<h1>{{post.title}}</h1>
+		<p>Posted {{post.timestamp|timesince}} ago</p>
+		<p>{{post.body|linebreaksbr}}</p>
+	</body>
+</html>
